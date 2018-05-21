@@ -9,7 +9,7 @@ class Board {
     image(pa, 300, 0, 150, 150);
   }
 
-void updateCommentArea(String comment){
+  void updateCommentArea(String comment){
  fill(#000000);
  rect(0,150,450,75);
  fill(#FFFFFF);
@@ -17,7 +17,7 @@ void updateCommentArea(String comment){
  textAlign(CENTER);
  text(comment, 225, 180);
  textSize(20);
- String scoreMessage = "Win:"+game.win+" Draw:"+game.draw+ " Lose:"+game.lose;
+ String scoreMessage = "Score:"+game.score + "Win:"+game.win+" Draw:"+game.draw+ " Lose:"+game.lose;
  text(scoreMessage, 225, 200);
 }
 
